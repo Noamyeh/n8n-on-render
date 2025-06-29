@@ -10,4 +10,7 @@ services:
       - N8N_BASIC_AUTH_USER=admin
       - N8N_BASIC_AUTH_PASSWORD=Noam1315
     volumes:
-      - ~/.n8n:/home/node/.n8n
+      - n8n_data:/home/node/.n8n
+
+volumes:
+  n8n_data:
